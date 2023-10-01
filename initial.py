@@ -13,6 +13,7 @@ from datetime import datetime, timedelta
 # Starting a new dataframe with 180 days from today
 # Get today's date
 today = datetime.today().strftime('%Y-%m-%d')
+# future_date = today + timedelta(days=180)
 
 # Generate a date range going back 180 days
 date_range = pd.date_range(end=today, periods=180, freq='D')
